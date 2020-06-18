@@ -1,0 +1,79 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+p {
+	
+	padding: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.item {
+	 float: left;
+    margin-left: 5px;
+	border: 3px solid black;
+	background: #666666;
+	margin-top: 5px;
+}
+
+.ch,.be,.su {
+	position: relative;
+	left: 80%;
+	text-align: center;
+	width: 20%;
+	border-right: 1px solid black;
+	border-top: 1px solid black;
+	border-left: 3px solid black;
+	border-bottom: 3px solid black;
+	font-weight: bold;
+}
+.ch {
+	background-color: pink;
+}
+.be {
+	background-color: blue;
+}
+.su {
+	background-color: red;
+}
+
+@media (min-width: 1200px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+    margin-left: 5px;
+	border: 3px solid black;
+	background: #666666;
+	margin-top: 5px;
+   
+  }
+  
+  .col-lg-4 {
+    width: 32.7%;
+    
+  }
+  
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+    margin-left: 5px;
+	border: 3px solid black;
+	background: #666666;
+	margin-top: 5px;
+  }
+  
+  .col-md-6 {
+    width: 49%;
+  }
+  
+  .col-md-12 {
+    width: 98.5%;
+  }
+}
