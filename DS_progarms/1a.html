@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        #include <stdio.h>
+            #define sz 5
+            #include <stdlib.h>
+            void push (int s[sz],int *top,int item)
+            {
+            if (*top == sz-1)
+            printf ("Stack Overflow\n");
+            else
+            {
+            *top = *top+1;
+            s[*top] = item;
+            }
+            }
+            void pop (int s[sz],int *top)
+            {
+            if (*top == -1)
+            printf ("Stack Underflow\n");
+            else
+            {
+            printf ("Deleted is %d\n",s[*top]);
+            *top = *top-1;
+            }
+            }
+            void display (int s[sz],int top)
+            {
+            int i;
+            if (top == -1)
+            printf ("Stack is Empty\n");
+            else
+            {
+            printf ("Content of Stack\n");
+            for (i=0;i<=top;i++)
+            {
+            printf ("%d\n",s[i]);
+            }
+            }
+            }
+            int main ()
+            {
+            int s[sz],top=-1,item,ch;
+            for (;;)
+            
+            {
+            printf ("1:PUSH:2;POP:3;DISPLAY; else exit \n");
+            scanf ("%d",&ch);
+            switch (ch)
+            {
+            case 1: printf ("Enter the Item\n");
+            scanf ("%d",&item);
+            push (s,&top,item);
+            break;
+            case 2: pop (s,&top);
+            break;
+            case 3: display (s,top);
+            break;
+            default: exit (0);
+            }
+            }
+            }
+    </p>
+</body>
+</html>
